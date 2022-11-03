@@ -5,6 +5,8 @@ const useController = require('../controllers/user')
 
 router.get('/users', useController.index )
 
+router.get('/user/:id', useController.show)
+
 router.post('/user', useController.store)
 
 router.put('/user/:id', useController.update)
